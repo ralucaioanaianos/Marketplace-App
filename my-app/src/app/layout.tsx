@@ -6,9 +6,8 @@ import SearchButton from './components/SearchButton'
 import { clothingData } from '../utils/ClothingData'; // Import the clothing data
 import ClothingItem from './components/ClothingItem'
 import ClothesList from './components/ClothesList'
-import { Afacad } from 'next/font/google'
 
-const afacad = Afacad({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -26,7 +25,7 @@ export default function RootLayout({
         <meta name="description"  />
         {/* Add other meta tags, stylesheets, or scripts here */}
       </head>
-      <body className={afacad.className}>
+      <body className={inter.className}>
         <Navbar />
         
         {children}
