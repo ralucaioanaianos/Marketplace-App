@@ -1,0 +1,42 @@
+/* components/Navbar.module.css */
+
+.navbar {
+  background-color: rgb(65, 84, 49);
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 3rem; /* Set the height of the image */
+  margin-right: 1rem;
+}
+
+.logo a {
+  display: flex; /* Ensure the text and image are on the same line */
+  align-items: center; /* Center the content vertically */
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+
+.navLinks {
+  list-style-type: none;
+  display: flex;
+}
+
+.navLinks li {
+  margin-right: 1rem;
+}
+
+.navLinks a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navLinks a:hover {
+  text-decoration: underline;
+}

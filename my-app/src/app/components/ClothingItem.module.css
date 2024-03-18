@@ -1,0 +1,39 @@
+/* components/ClothingItem.module.css */
+
+.clothingItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+}
+
+.imageContainer {
+  position: relative;
+}
+
+.details {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 0.5rem;
+  background-color: rgba(65, 84, 49, 0.5); /* Green semi-transparent background */
+  color: white;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.imageContainer:hover .details {
+  opacity: 1;
+}
+
+.name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.gender,
+.sizes {
+  margin-bottom: 0.5rem;
+}

@@ -1,0 +1,38 @@
+/* ClothingDetails.module.css */
+
+.container {
+    display: flex;
+    align-items: stretch; /* Ensure both image and details containers have equal height */
+}
+
+.image {
+    flex: 1; /* Allow the image container to grow to fill available space */
+    overflow: hidden; /* Hide any overflow to prevent scrolling */
+}
+
+.image img {
+    width: 100%; /* Ensure the image fills its container */
+    height: 90vh; /* Set the height to 100% of the viewport height */
+    object-fit: cover; /* Maintain aspect ratio while covering the container */
+    padding: 10px;
+}
+
+.details {
+    flex: 1; /* Allow the details container to grow to fill available space */
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Align items vertically */
+    justify-content: center; /* Center items vertically */
+    padding-left: 20px; /* Add some space between the image and details */
+}
+
+.details h1 {
+    margin-top: 0; /* Remove default margin for the heading */
+    font-size: 24px; /* Set font size to 24px */
+    font-weight: bold; /* Make text bold */
+    text-align: center; /* Center text horizontally */
+}
+
+.details p {
+    margin: 0; /* Remove default margin for paragraphs */
+    text-align: center; /* Center text horizontally */
+}

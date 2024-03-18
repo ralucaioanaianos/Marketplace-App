@@ -1,0 +1,44 @@
+/* components/SearchButton.module.css */
+
+.searchButtonContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem; /* Adjust margin as needed */
+}
+
+.searchButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchButton input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+.searchButton button {
+  background-image: url("search_icon.png");
+  background-size: cover;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.searchButton button img {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+
+.searchButton button:hover {
+  background: #0056b3;
+}
+
+.clothesListContainer {
+  margin-top: 2rem; /* Adjust margin as needed */
+}

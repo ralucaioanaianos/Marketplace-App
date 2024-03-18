@@ -1,0 +1,27 @@
+/* ClothesList.module.css */
+
+.clothingList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.pagination a {
+  margin: 0 5px;
+  font-size: 18px; /* Set font size to 18px */
+  font-weight: bold; /* Make text bold */
+  text-decoration: none; /* Remove underline */
+  color: black; /* Set text color */
+  transition: text-decoration 0.3s; /* Add transition for underline */
+}
+
+.pagination a:hover {
+  text-decoration: underline; /* Underline text on hover */
+}
