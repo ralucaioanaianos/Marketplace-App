@@ -1,5 +1,3 @@
-// pages/clothing/[name].js
-
 import { useRouter } from 'next/navigation';
 
 const ClothingDetailsPage = () => {

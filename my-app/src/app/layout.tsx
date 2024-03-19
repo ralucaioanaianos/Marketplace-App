@@ -23,7 +23,6 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="description"  />
-        {/* Add other meta tags, stylesheets, or scripts here */}
       </head>
       <body className={inter.className}>
         <Navbar />

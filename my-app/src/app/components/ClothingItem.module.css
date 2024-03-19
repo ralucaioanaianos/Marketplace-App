@@ -1,5 +1,3 @@
-/* components/ClothingItem.module.css */
-
 .clothingItem {
   display: flex;
   flex-direction: column;
@@ -16,7 +14,7 @@
   bottom: 0;
   width: 100%;
   padding: 0.5rem;
-  background-color: rgba(65, 84, 49, 0.5); /* Green semi-transparent background */
+  background-color: rgba(65, 84, 49, 0.5); 
   color: white;
   text-align: center;
   opacity: 0;

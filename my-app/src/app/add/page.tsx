@@ -1,6 +1,6 @@
 'use client'
 import React, { useState } from 'react';
-import styles from './Add.module.css'; // Import CSS file
+import styles from './Add.module.css'; 
 import { add, clothingData } from '@/utils/ClothingData';
 
 interface Component {

@@ -1,8 +1,7 @@
-// SearchButton.tsx
 'use client'
 import React, { useState } from 'react';
 import styles from './SearchButton.module.css';
-import ClothesList from './ClothesList'; // Import the ClothesList component
+import ClothesList from './ClothesList'; 
 import { clothingData } from '@/utils/ClothingData'; // Import clothingData
 
 const SearchButton = () => {

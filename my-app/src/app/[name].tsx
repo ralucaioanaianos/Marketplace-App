@@ -1,5 +1,3 @@
-// pages/clothing/[name].tsx
-
 import { useRouter } from 'next/router';
 import React from 'react';
 

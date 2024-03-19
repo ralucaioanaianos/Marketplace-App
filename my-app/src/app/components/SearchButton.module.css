@@ -1,10 +1,8 @@
-/* components/SearchButton.module.css */
-
 .searchButtonContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 2rem; /* Adjust margin as needed */
+  margin-top: 2rem;
 }
 
 .searchButton {
@@ -40,5 +38,5 @@
 }
 
 .clothesListContainer {
-  margin-top: 2rem; /* Adjust margin as needed */
+  margin-top: 2rem; 
 }
