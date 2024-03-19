@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { ClothingItemProps } from './ClothingItem';
 import ClothingItem from './ClothingItem';
 import styles from './ClothesList.module.css';
+import { clothingData } from '@/utils/ClothingData';
 
 interface ClothesListProps {
   clothingData: ClothingItemProps[];
@@ -10,13 +11,10 @@ interface ClothesListProps {
   currentPage: number;
 }
 
-const ClothesList: React.FC<ClothesListProps> = ({ clothingData, itemsPerPage, currentPage }) => {
+const ClothesList: React.FC<ClothesListProps> = ({ itemsPerPage, currentPage }) => {
   const totalPages = 2;
   const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = Math.min(startIndex + itemsPerPage, clothingData.length);
-  console.log("miauuuu")
-  console.log(clothingData);
-  console.log("lalala")
   const currentItems = [];
   for (let i = startIndex; i < Math.min(endIndex, clothingData.length); i++) {
     currentItems.push(clothingData[i]);

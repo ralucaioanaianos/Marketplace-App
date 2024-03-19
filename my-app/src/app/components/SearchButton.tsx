@@ -27,7 +27,7 @@ const SearchButton = () => {
         <button onClick={handleSearch}></button>
       </div>
       <div className={styles.clothesListContainer}>
-        <ClothesList itemsPerPage={10} currentPage={1} clothingData={filteredClothing} /> 
+        <ClothesList itemsPerPage={10} currentPage={1} clothingData={filteredData} /> 
       </div>
     </div>
   );

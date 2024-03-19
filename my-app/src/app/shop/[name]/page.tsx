@@ -11,13 +11,13 @@ const ClothingPage = () => {
   const pageNumber = parseInt(page || '1', 10);
   const itemsPerPage = 10;
   const startIndex = (pageNumber - 1) * itemsPerPage;
-  const endIndex = startIndex + itemsPerPage;
+  const endIndex = Math.min(startIndex + itemsPerPage, clothingData.length) ;
   const currentClothingData = clothingData.slice(startIndex, endIndex);
 
   return (
     <div>
       <h1>Shop Page {page}</h1>
-      <ClothesList clothingData={currentClothingData} itemsPerPage={0} currentPage={0} />
+      <ClothesList clothingData={clothingData} itemsPerPage={10} currentPage={0} />
     </div>
   );
 };
