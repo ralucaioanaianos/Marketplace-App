@@ -18,6 +18,8 @@
   text-decoration: none; 
   color: black; 
   transition: text-decoration 0.3s; 
+}
 
 .pagination a:hover {
   text-decoration: underline; 
+}
