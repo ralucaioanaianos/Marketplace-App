@@ -10,13 +10,10 @@ const SearchButton = () => {
   const [filteredClothing, setFilteredClothing] = useState(clothingData); // Initialize filteredClothing with all clothingData
   let filteredData = clothingData;
   const handleSearch = () => {
-   filteredData = clothingData.filter((item) => 
-     { 
-      console.log("alo");
-      console.log(clothingData.length);
-      item.name.toLowerCase().includes(searchTerm.toLowerCase())}
+    const filteredData = clothingData.filter((item) => 
+      item.name.toLowerCase().includes(searchTerm.toLowerCase())
     );
-    setFilteredClothing(filteredData); // Update filteredClothing state
+    setFilteredClothing(filteredData); 
   };
 
   return (
@@ -24,7 +21,7 @@ const SearchButton = () => {
       <div className={styles.searchButton}>
         <input
           type="text"
-          placeholder="Search for clothing..."
+          placeholder="Search..."
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
         />
